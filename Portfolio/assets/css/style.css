@@ -124,5 +124,95 @@ footer a {
     margin-bottom: 0.8rem;
   }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    position: static;
+    background-color: #2590BA;
+  }
+  .header--menu-line {
+    background-color: #fff;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container-section--left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .container-section--left-info-name {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+  .container-section--left-info-dev {
+    font-size: 1.5rem;
+  }
+  .container-section--left-info-buttons {
+    width: 70%;
+  }
+  .container-section--left-info-buttons a {
+    font-size: 0.8rem;
+    width: 45%;
+  }
+  .container-section--right {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    background-size: 40% auto;
+  }
+}
+footer {
+  position: static;
+  background-color: #2590BA;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  header {
+    position: static;
+    background-color: #2590BA;
+  }
+  .header--logo a {
+    font-size: 1.8rem;
+  }
+  .header--menu {
+    height: 25px;
+    width: 30px;
+  }
+  .header--menu-line {
+    background-color: #fff;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 82px);
+  }
+  .container-section--left-info-name {
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+  .container-section--left-info-dev {
+    font-size: 0.9rem;
+  }
+  .container-section--left-info-buttons {
+    width: 100%;
+  }
+  .container-section--left-info-buttons a {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .container-section--right {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    background-size: 60% auto;
+  }
+  footer {
+    position: static;
+    background-color: #2590BA;
+    text-align: center;
+    font-size: 11px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -96,5 +96,85 @@ footer
       width: 100%
       margin-bottom: .80rem
   
+@media (min-width:426px) and (max-width:768px)
+  
+  header
+    position: static
+    background-color: variables.$primary-color
+  
+  .header--menu-line
+    background-color: variables.$secundary-color
+
+  .container
+    grid-template-columns: 1fr
+
+    &-section--left
+      grid-column: 1/2
+      grid-row: 1/2
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 0 20px
+      &-info
+        &-name
+          font-size: 2.5rem
+          line-height: 4.5rem
+        &-dev
+          font-size: 1.5rem
+        &-buttons
+          width: 70%
+          & a
+            font-size: .80rem
+            width: 45%
+            
+  
+    &-section--right
+      grid-column: 1/2
+      grid-row: 2/5
+      background-size: 40% auto
+      
+    
+footer
+  position: static
+  background-color: variables.$primary-color
+  text-align: center
+  
+@media(max-width:425px)
+  header
+    position: static
+    background-color: variables.$primary-color
+  .header--logo a
+    font-size: 1.8rem
+  .header--menu
+    height: 25px
+    width: 30px
+  .header--menu-line
+    background-color: variables.$secundary-color
+  .container
+    grid-template-columns: 1fr
+    height: calc(100vh - 82px)
+    &-section--left
+      &-info
+        &-name
+          font-size: 1.8rem
+          line-height: 4rem
+        &-dev
+          font-size: .90rem
+        &-buttons
+          width: 100%
+          & a
+            font-size: .80rem
+            width: 100%
+    &-section--right
+      grid-column: 1/2
+      grid-row: 2/5
+      background-size: 60% auto
+    
+  footer
+    position: static
+    background-color: variables.$primary-color
+    text-align: center
+    font-size: 11px
+  
 
 
