@@ -162,13 +162,12 @@ footer a {
     grid-row: 2/5;
     background-size: 40% auto;
   }
+  footer {
+    position: static;
+    background-color: #2590BA;
+    text-align: center;
+  }
 }
-footer {
-  position: static;
-  background-color: #2590BA;
-  text-align: center;
-}
-
 @media (max-width: 425px) {
   header {
     position: static;
