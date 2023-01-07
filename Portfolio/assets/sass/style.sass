@@ -36,4 +36,50 @@ header
     @include mixins.flex-column
     justify-content: center
     padding: 0 20px
+    &-info
+      color: variables.$secundary-color
+      &-name
+        font-size: 3rem
+        line-height: 6rem
+      &-dev
+        font-size: 2rem
+        margin: 1.5rem 0
+        text-transform: uppercase
+      &-buttons
+        widows: 60%
+        display: flex
+        justify-content: left
+        flex-wrap: wrap
+        & a
+          padding: 20px 40px
+          font-size: 1rem
+          border-radius: 4px
+          text-decoration: none
+          box-shadow: 2px 2px 14px #000
+          display: inline-block
+          margin: 1rem 20px 0 0
+          transition: .4s
+          text-transform: uppercase
+          &:hover
+            background-color: variables.$hover-color
+            color: variables.$secundary-color
+        &-dark
+          background-color: variables.$btn-color
+          color: variables.$secundary-color
+        &-light
+          background-color: variables.$secundary-color
+          color: variables.$primary-color
+  &-section--right
+    background-image: url('../img/profile4.png')
+    background-position: center
+    background-size: 50% auto
+    background-repeat: no-repeat
+
+footer
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  color: variables.$secundary-color
+  padding: 20px
 

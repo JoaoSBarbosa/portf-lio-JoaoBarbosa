@@ -50,5 +50,61 @@ header {
   justify-content: center;
   padding: 0 20px;
 }
+.container-section--left-info {
+  color: #fff;
+}
+.container-section--left-info-name {
+  font-size: 3rem;
+  line-height: 6rem;
+}
+.container-section--left-info-dev {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+}
+.container-section--left-info-buttons {
+  widows: 60%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.container-section--left-info-buttons a {
+  padding: 20px 40px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 2px 2px 14px #000;
+  display: inline-block;
+  margin: 1rem 20px 0 0;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.container-section--left-info-buttons a:hover {
+  background-color: rgb(0, 11, 23);
+  color: #fff;
+}
+.container-section--left-info-buttons-dark {
+  background-color: #0e6486;
+  color: #fff;
+}
+.container-section--left-info-buttons-light {
+  background-color: #fff;
+  color: #2590BA;
+}
+.container-section--right {
+  background-image: url("../img/profile4.png");
+  background-position: center;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
