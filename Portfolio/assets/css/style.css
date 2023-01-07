@@ -106,5 +106,23 @@ footer {
   color: #fff;
   padding: 20px;
 }
+footer a {
+  color: #fff;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .container-section--left-info-buttons {
+    width: 75%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-section--left-info-buttons {
+    width: 57%;
+  }
+  .container-section--left-info-buttons a {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
