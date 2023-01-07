@@ -1,0 +1,39 @@
+@use 'variables'
+@use 'mixins'
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  font-family: Arial, Helvetica, sans-serif
+
+header
+  @include mixins.flex-row
+  padding: 20px
+  @include mixins.fixed
+
+.header--logo a
+  font-size: 2.3rem
+  text-transform: uppercase
+  text-decoration: none
+  font-weight: bold
+  color: variables.$secundary-color
+
+.header--menu
+  @include mixins.flex-column
+  height: 30px
+  width: 40px
+  cursor: pointer
+  &-line
+    height: 4px
+    background-color: variables.$primary-color
+
+.container
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  height: 100vh
+  &-section--left
+    background-color: variables.$primary-color
+    @include mixins.flex-column
+    justify-content: center
+    padding: 0 20px
+
